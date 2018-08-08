@@ -1,25 +1,42 @@
 body {
     text-align: center;
+    background: #383a53; 
 }
 
 h1 {
     font-family: Monoton;
     font-size: 70px;
     margin: 0.2em;
+    color: #fff;
 }
 
 h2 {
     margin: 1em 0 0.25em;
+    color: #fff;
 }
 
 h2:first-of-type {
     margin-top: 0.5em;
 }
 
+hr{
+    border-top: solid 1px  #f3314b;
+	width: 18%;
+	margin-top: 15px;
+}
+
+form, p {
+    color: #fff;
+}
+
+p:first-of-type {
+    margin:25px 0 0 0;
+}
+
 table,
 tr,
 td {
-    border: 1px solid black;
+    border: 2px solid #fff;
 }
 
 table {
