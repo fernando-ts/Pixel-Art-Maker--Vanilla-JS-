@@ -33,3 +33,8 @@ submitReady.addEventListener('submit', function (e) {
 theTbl.addEventListener('click', function (event) {
     event.target.style.background = chosenColor.value;  //The question here is if I should have left the heightSize and the widthSize outside the function and then call only the value inside like here.?  
 })
+
+//remove the added color when double click 
+theTbl.addEventListener('dblclick', function (event) {
+    event.target.style.background = 'transparent';    
+})
