@@ -1,6 +1,6 @@
 body {
     text-align: center;
-    background: #383a53; 
+    background: #333333;
 }
 
 h1 {
@@ -21,7 +21,7 @@ h2:first-of-type {
 
 hr{
     border-top: solid 1px  #f3314b;
-	width: 18%;
+	width: 14%;
 	margin-top: 15px;
 }
 
