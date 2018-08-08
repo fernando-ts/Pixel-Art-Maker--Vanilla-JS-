@@ -1,5 +1,5 @@
 // Select color input
-const chosenColor = document.getElementById('colorPicker').value;
+const chosenColor = document.getElementById('colorPicker');
 
 //Select the skeleton's table to be constructed
 const theTbl = document.getElementById('pixelCanvas');
@@ -27,4 +27,9 @@ function makeGrid() {
 submitReady.addEventListener('submit', function (e) {
     e.preventDefault();
     makeGrid();
+})
+
+//Add color to a cell 
+theTbl.addEventListener('click', function (event) {
+    event.target.style.background = chosenColor.value;  //The question here is if I should have left the heightSize and the widthSize outside the function and then call only the value inside like here.?  
 })
