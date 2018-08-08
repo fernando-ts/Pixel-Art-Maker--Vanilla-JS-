@@ -9,26 +9,28 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Pixel Art Maker</h1>
+    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column"></div>
+        <h1>Pixel Art Maker</h1>
 
-    <h2>Choose Grid Size</h2>
-    <form id="sizePicker">
-        Grid Height:
-        <input type="number" id="inputHeight" name="height" min="1" max="60" value="1">
-        Grid Width:
-        <input type="number" id="inputWidth" name="width" min="1" max="60" value="1">
-        <input type="submit">
-    </form>
+        <h2 class="cover-heading">Choose Grid Size</h2>
+        <form id="sizePicker">
+            Grid Height:
+            <input type="number" id="inputHeight" name="height" min="1" max="60" value="1">
+            Grid Width:
+            <input type="number" id="inputWidth" name="width" min="1" max="60" value="1">
+            <input type="submit" class="btn btn-md btn-secondary">
+        </form>
 
-    <h2>Pick A Color</h2>
-    <input type="color" id="colorPicker">
+        <h2 class="cover-heading">Pick A Color</h2>
+        <input type="color" id="colorPicker">
 
-    <h2>Design Canvas</h2>
-    <hr>
-    <p>Click on a cell to add the desired chosen color</p>
-    <p>**Doubleclick on a cell if you want to remove the color added</p>
-    <table id="pixelCanvas"></table>
+        <h2 class="cover-heading">Design Canvas</h2>
+        <hr>
+        <p>Click on a cell to add the desired chosen color</p>
+        <p>**Doubleclick on a cell if you want to remove the color added</p>
+        <table id="pixelCanvas"></table>
 
-    <script src="designs.js"></script>
+        <script src="designs.js"></script>
+    </div>
 </body>
 </html>
